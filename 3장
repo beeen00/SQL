@@ -1,9 +1,7 @@
 ## 3장 데이터 가공을 위한 SQL
-- 5장 하나의 값 조작하기
+# 5강 하나의 값 조작하기
 
-- 1. 코드 값을 레이블로 변경하기
-
-- 테이블 생성
+# mst_users 테이블 생성
 DROP TABLE IF EXISTS temporal-web-348709.set3.mst_users;
 CREATE TABLE temporal-web-348709.set3.mst_users(
     user_id         string(255)
@@ -18,7 +16,8 @@ VALUES
   , ('U003', '2016-08-27', 3)
 ;
 
-- 코드를 레이블로 변경
+
+# 1. 코드 값을 레이블로 변경하기
 select
   user_id
   , CASE
